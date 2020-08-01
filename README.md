@@ -33,8 +33,10 @@ for new taps, there are three common hurtles we wanted to address with Singer DB
 
 We are asking for help from community members in one of 3 ways:
 
-1. Register new taps -
-2. Report taps that aren't working - Help us instill trust in working taps and targets by
-   reporting those which aren't working.
-3. Expand documentation - Read our markdown docs styleguide for information on how to
-   ensure settings are automatically parsed.
+1. Register new taps - Follow the [Plugin Onboarding Guide](docs/onboarding_plugins.md) to
+   add a new tap or target to the **Singer DB** index.
+2. Report taps that aren't working - Help us preserve trust in those working taps and
+   targets by flagging any which aren't working for removal or deprecation.
+3. Improve documentation - Read our [README Docs Styleguide](docs/readme_styleguide.md)
+   for information on how to ensure settings are automatically parsed correctly from the
+   upstream documentation.
