@@ -1,6 +1,6 @@
 """Unit tests for parsing library."""
 
-from singer_index.markdown_table_parser import parse_from_string
+from singer_db.markdown_table_parser import parse_from_string
 
 
 MD_TEST = """

@@ -1,8 +1,8 @@
 """Unit tests for scanner."""
 
-from singer_index.scanner import scan_plugin_readme
+from singer_db.scanner import scan_plugin_readme
 
-README_PATH = "./singer_index/tests/resources/sample-tap.README.md"
+README_PATH = "./singer_db/tests/resources/sample-tap.README.md"
 EXPECTED_SETTINGS_LIST = [
     "aws_access_key_id",
     "aws_secret_access_key",

@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "singer_index"
+        "singer_db"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,

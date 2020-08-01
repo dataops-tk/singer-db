@@ -2,7 +2,7 @@
 
 from typing import Dict, List, Any
 
-from singer_index.markdown_table_parser import parse_from_file
+from singer_db.markdown_table_parser import parse_from_file
 
 EXPECTED_COLS = {
     "setting": "name",
@@ -36,8 +36,6 @@ def _standardize(settings_rows: List[Dict[str, str]]) -> List[Dict[str, Any]]:
             if cleaned_key not in EXPECTED_COLS:
                 output_row[f"_{cleaned_key}"] = value
             else:
-                output_row[
-                    EXPECTED_COLS[cleaned_key] or cleaned_key
-                ] = value
+                output_row[EXPECTED_COLS[cleaned_key] or cleaned_key] = value
         output_rows.append(output_row)
     return output_rows
