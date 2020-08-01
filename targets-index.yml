@@ -57,6 +57,9 @@ targets:
       repo: https://github.com/transferwise/pipelinewise-target-snowflake
       pip: pipelinewise-target-snowflake
       default: true
+    - owner: datamill-co
+      repo: https://github.com/datamill-co/target-snowflake
+      pip: target-snowflake
     - owner: aaronsteers
       repo: https://github.com/aaronsteers/pipelinewise-target-snowflake
       pip: git+https://github.com/aaronsteers/pipelinewise-target-snowflake@feature/aaronsteers-retain-s3-files
