@@ -21,9 +21,11 @@ ENV PLUGIN_NAME=${PLUGIN_NAME} \
 RUN ln -s /venv/${PLUGIN_NAME}/bin/${PLUGIN_NAME} /venv/${PLUGIN_NAME}/${PLUGIN_NAME}
 ENV PATH="/venv/${PLUGIN_NAME}:${PATH}"
 
-# Check that the plugin is running and on the PATH
-RUN test -e $(which ${PLUGIN_NAME}) || exit 1
-# RUN ${PLUGIN_NAME} --help
+# Check that plugin is running and on the PATH
+RUN if [ ! -e $(which ${PLUGIN_NAME}) ]; then \
+    echo "ERROR: count not find ${PLUGIN_NAME} on path" && \
+    exit 1; \
+    fi;
 
 RUN echo "#!bin/bash\n\n${PLUGIN_NAME} \$@\n" > bootstrap.sh
 RUN chmod 777 bootstrap.sh
