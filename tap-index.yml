@@ -1,0 +1,115 @@
+# An index of singer.io plugins.
+# File layout description:
+#  - name   - what the plugin calls itself (may be different from the pip package name)
+#  - pip    - can be: (1) anything pip accepts (generally a git reference or a pip package name)
+#                     (2) for custom/non-python plugins, a path containing the word "Dockerfile" (e.g. tap-mssql.Dockerfile)
+#  - repo   - Git Repo URL (https)
+
+taps:
+  adwords:
+    about_url: https://ads.google.com
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-adwords
+      pip: tap-adwords
+      default: true
+  covid-19:
+    about_url: https://github.com/singer-io/tap-covid-19
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-covid-19
+      pip: tap-covid-19
+      default: true
+  exchangeratesapi:
+    about_url: http://exchangeratesapi.io/
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-exchangeratesapi
+      pip: tap-exchangeratesapi
+      default: true
+  jira:
+    about_url: https://www.atlassian.com/software/jira
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-jira
+      pip: tap-jira
+      default: true
+  kafka:
+    about_url: https://kafka.apache.org
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-tap-kafka
+      pip: pipelinewise-tap-kafka
+      default: true
+  mssql:
+    about_url: https://www.microsoft.com/en-us/sql-server/sql-server-2019
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-mssql
+      source: tap-mssql.Dockerfile
+      default: true
+  oracle:
+    about_url: https://www.oracle.com/database/technologies
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-oracle
+      pip: tap-oracle
+      default: true
+  pardot:
+    about_url: https://www.pardot.com
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-pardot
+      pip: tap-pardot
+      default: true
+  postgres:
+    about_url: https://www.postgresql.org
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-tap-postgres
+      pip: pipelinewise-tap-postgres
+      default: true
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-postgres
+      pip: tap-postgres
+  s3-csv:
+    about_url: https://aws.amazon.com/s3
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-tap-s3-csv
+      pip: pipelinewise-tap-s3-csv
+      default: true
+  salesforce:
+    about_url: https://www.salesforce.com
+    forks:
+    - owner: meltano
+      repo: https://gitlab.com/meltano/tap-salesforce
+      source: git
+      default: true
+    - owner: singer.io
+      repo: https://github.com/singer-io/tap-salesforce
+      pip: tap-salesforce
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-tap-salesforce
+      pip: tap-salesforce
+  sftp:
+    about_url: https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer.io/tap-sftp
+      pip: tap-sftp
+      default: true
+  snowflake:
+    about_url: https://www.snowflake.com
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-tap-snowflake
+      pip: pipelinewise-tap-snowflake
+      default: true
+  zendesk:
+    about_url: https://www.zendesk.com
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer.io/tap-zendesk
+      pip: tap-zendesk
+      default: true

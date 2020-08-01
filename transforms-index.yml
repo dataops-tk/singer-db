@@ -1,0 +1,15 @@
+# An index of singer.io plugins.
+# File layout description:
+#  - name   - what the plugin calls itself (may be different from the pip package name)
+#  - pip    - can be: (1) anything pip accepts (generally a git reference or a pip package name)
+#                     (2) for custom/non-python plugins, a path containing the word "Dockerfile" (e.g. tap-mssql.Dockerfile)
+#  - repo   - Git Repo URL (https)
+
+transforms:
+  transform-field:
+    about_url: https://github.com/transferwise/pipelinewise-transform-field
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-transform-field
+      pip: pipelinewise-transform-field
+      default: true
