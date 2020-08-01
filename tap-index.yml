@@ -106,6 +106,13 @@ taps:
       repo: https://github.com/transferwise/pipelinewise-tap-snowflake
       pip: pipelinewise-tap-snowflake
       default: true
+  workday-raas:
+    about_url: https://www.workday.com
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer.io/tap-workday-raas
+      pip: tap-workday-raas
+      default: true
   zendesk:
     about_url: https://www.zendesk.com
     forks:

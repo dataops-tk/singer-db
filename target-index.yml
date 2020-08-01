@@ -6,6 +6,35 @@
 #  - repo   - Git Repo URL (https)
 
 targets:
+  csv:
+    about_url: https://en.wikipedia.org/wiki/Comma-separated_values
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/target-csv
+      pip: target-csv
+      default: true
+  gsheet:
+    about_url: https://sheets.google.com
+    forks:
+    - owner: singer.io
+      repo: https://github.com/singer-io/target-gsheet
+      pip: target-gsheet
+      default: true
+  postgres:
+    about_url: https://www.postgresql.org
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-target-postgres
+      pip: pipelinewise-target-postgres
+      default: true
+  redshift:
+    about_url: https://aws.amazon.com/redshift
+    forks:
+    - owner: transferwise
+      repo: https://github.com/transferwise/pipelinewise-target-redshift"
+      # Pending 2.0.0 release to PyPi (https://pypi.org/project/pipelinewise-target-redshift/)
+      pip: git
+      default: true
   s3-csv:
     about_url: https://aws.amazon.com/s3
     forks:
@@ -16,28 +45,6 @@ targets:
     - owner: aaronsteers
       repo: https://github.com/aaronsteers/pipelinewise-target-s3-csv
       pip: git
-  csv:
-    about_url: https://en.wikipedia.org/wiki/Comma-separated_values
-    forks:
-    - owner: singer.io
-      repo: https://github.com/singer-io/target-csv
-      pip: target-csv
-      default: true
-  postgres:
-    about_url: https://www.postgresql.org
-    forks:
-    - owner: transferwise
-      repo: https://github.com/transferwise/pipelinewise-target-postgres
-      pip: pipelinewise-target-postgres,
-      default: true
-  redshift:
-    about_url: https://aws.amazon.com/redshift
-    forks:
-    - owner: transferwise
-      repo: https://github.com/transferwise/pipelinewise-target-redshift"
-      # Pending 2.0.0 release to PyPi (https://pypi.org/project/pipelinewise-target-redshift/)
-      pip: git
-      default: true
   snowflake:
     about_url: https://www.snowflake.com
     forks:
