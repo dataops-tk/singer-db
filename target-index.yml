@@ -1,9 +1,14 @@
 # An index of singer.io plugins.
 # File layout description:
-#  - name   - what the plugin calls itself (may be different from the pip package name)
-#  - pip    - can be: (1) anything pip accepts (generally a git reference or a pip package name)
-#                     (2) for custom/non-python plugins, a path containing the word "Dockerfile" (e.g. tap-mssql.Dockerfile)
-#  - repo   - Git Repo URL (https)
+#  - name    - What the plugin calls itself (may be different from the pip package name)
+#  - owner   - Calculated. Should be the organization or user name who owns the repo,
+#              converted to lowercase with '.' characters replaced by '-'.
+#  - pip     - can be: (1) pip package name on PyPi.
+#                      (2) the text `git` to install from the git `repo` setting directly.
+#                      (3) anything else that pip accepts.
+#  - repo    - Git Repo URL (https://...)
+#  - default - If `true`, this fork will be served automatically when a user does not
+#              request a specific fork owner.
 
 targets:
   csv:
